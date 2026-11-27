@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{name} · Equity Research & Macro Allocation</title>
+<meta name="description" content="Equity research and macro asset allocation portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<section class="hero" id="hero"></section>
+<div class="wrap">
+  <div class="kpis" id="kpis"></div>
+
+  <section class="block">
+    <div class="section-head"><h2>Current allocation vs benchmark</h2><span class="hint" id="asof"></span></div>
+    <div class="grid-alloc">
+      <div class="card"><h3>Asset classes</h3><p class="card-sub">Your weights vs a 60/40 benchmark. Click a slice for the reasoning.</p><div id="donut"></div></div>
+      <div class="card"><h3>Regions</h3><p class="card-sub">Active weight inside equities. Tags show your open calls.</p><div id="regions"></div></div>
+      <div class="card"><h3>Sectors</h3><p class="card-sub">Active weight inside equities. Tags show your open calls.</p><div id="sectors"></div></div>
+    </div>
+  </section>
+
+  <section class="block" id="open-calls">
+    <div class="section-head"><h2>Open calls</h2><span class="hint">Return vs index since the call. Click a card for the one-pager.</span></div>
+    <div class="calls" id="open-calls-list"></div>
+  </section>
+
+  <section class="block" id="closed-calls">
+    <div class="section-head"><h2>Closed calls</h2><span class="hint">Every call is kept, misses included.</span></div>
+    <div id="closed-calls-list"></div>
+  </section>
+
+  <section class="block">
+    <div class="section-head"><h2>Explore</h2></div>
+    <div class="explore">
+      <a class="card card-link" href="equity.html"><div class="accent" style="background:var(--blue)"></div><h3>Equity Research</h3><p>Bottom-up coverage: one-pagers, full notes and downloadable models.</p><div class="go">View coverage →</div></a>
+      <a class="card card-link" href="macro.html"><div class="accent" style="background:var(--teal)"></div><h3>Macro & Allocation</h3><p>Top-down view: regime, asset classes, US vs EAFE, sectors and hedging.</p><div class="go">Read the latest view →</div></a>
+      <a class="card card-link" href="track-record.html"><div class="accent" style="background:var(--amber)"></div><h3>Track Record & Methodology</h3><p>How I value, the benchmarks I use, and the full log of every call.</p><div class="go">See how I work →</div></a>
+    </div>
+  </section>
+</div>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
